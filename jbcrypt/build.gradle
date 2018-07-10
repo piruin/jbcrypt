@@ -1,16 +1,4 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-}
-
-plugins {
-    id 'com.jfrog.artifactory' version '4.0.0'
-    id 'com.jfrog.bintray' version '1.6'
-}
-
 apply plugin: 'java'
-apply from: "${rootDir}/publish.gradle"
 
 dependencies {
     testCompile 'junit:junit:4.12'
