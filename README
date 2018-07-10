@@ -1,3 +1,6 @@
+# jBCrypt
+[![](https://jitpack.io/v/piruin/jbcrypt.svg)](https://jitpack.io/#piruin/jbcrypt)
+
 jBCrypt is an implementation the OpenBSD Blowfish password hashing
 algorithm, as described in "A Future-Adaptable Password Scheme" by Niels
 Provos and David Mazieres: http://www.openbsd.org/papers/bcrypt-paper.ps
@@ -17,6 +20,7 @@ TODO file first, in case your problem is something I already know about
 
 A simple example that demonstrates most of the features:
 
+```java
 	// Hash a password for the first time
 	String hashed = BCrypt.hashpw(password, BCrypt.gensalt());
 
@@ -30,6 +34,7 @@ A simple example that demonstrates most of the features:
 		System.out.println("It matches");
 	else
 		System.out.println("It does not match");
+```
 
 There is also a C#/.NET port by Derek Slager:
 
